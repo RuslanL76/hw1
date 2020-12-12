@@ -60,32 +60,30 @@ function showNum(a) {
 }
 showNum(7);
 
-//for (let i = a, i < 15, i++){console.log(i)}; break;
 // 5 задание
 
-       function fourFunc() {
+
            function addition(a, b) {
-            console.log(a + b);
-           };
-           addition(2, 4);
+            return a + b;
+           }
+          let add = addition(2, 3)
            
            function subtraction(a, b) {
-             console.log(a - b);
-           } ;
-            subtraction(6, 4);
+               return a - b;
+           }
+            let sub = subtraction(6, 4);
             
             function multiplication(a, b) {
-                  console.log(a * b);
-            } ;
-            multiplication(8, 9);
+                return a * b;
+            }
+            let mult = multiplication(8, 9);
 
             function division(a, b) {
-                    console.log(a / b);
-            };
-                division(20, 2);
+                return a / b;
+            }
+           let divis = division(6, 3)
 
-       } ;
-       fourFunc();
+      
 
 // 6 задание
 
