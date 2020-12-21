@@ -32,3 +32,9 @@
      width: 80px;
      border: 1px solid black;
  }
+ select{
+     height: 30px;
+     width: 100px;
+     border: 1px solid black;
+
+ }

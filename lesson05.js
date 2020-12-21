@@ -45,12 +45,7 @@ divEl.appendChild(butt);
 const butt2 = document.createElement('button');
 butt2.innerText = 'отмена';
 divEl.appendChild(butt2);
-butt2.addEventListener("click", function (click){
-    alert('Ваша корзина пуста');
-});
-butt.addEventListener("click", function (click){
-alert('Сумма вашей корзины : '+ bascet.totalPrice() + ' ' +'рублей')
-});
+
 
 const bascet = {
     products: [
@@ -76,7 +71,36 @@ const bascet = {
             return nameBF.price * nameBF.value;
         }, 0);
     },
+
 }
+butt2.addEventListener("click", function (click){
+    alert('Ваша корзина пуста');
+});
+butt.addEventListener("click", function (click){
+
+    alert('В корзине : '+' '+(bascet.products.length)+' '+'товара на сумму'+ bascet.totalPrice() + ' ' +'рублей')
+
+});
+// 3 задание
+const selec = document.querySelector("select");
+const opt = document.createElement('option');
+const opt1 = document.createElement('option');
+const opt2 = document.createElement('option');
+const opt3 = document.createElement('option');
+const catalog = [
+    ['phone', 3, 10000 ],
+    ['clock', 5, 3000],
+    ['tv', 4, 15000]
+]
+selec.appendChild(opt);
+opt.innerHTML = 'Catalog';
+selec.appendChild(opt1);
+opt1.innerText=(catalog[0][0]);
+selec.appendChild(opt2);
+opt2.innerHTML = (catalog[1][0]);
+selec.appendChild(opt3);
+opt3.innerHTML = (catalog[2][0]);
+
 
 
 
