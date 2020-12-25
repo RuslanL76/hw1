@@ -1,0 +1,47 @@
+#catalog{
+font-size: 40px;
+    padding-bottom: 20px;
+
+
+}
+.catalog1{
+    width: 600px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    font-size: 40px;
+    margin-top: 20px;
+
+
+}
+
+.catalog2{
+    width: 600px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    font-size: 40px;
+}
+.catalog3{
+    width: 600px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    font-size: 40px;
+}
+button{
+
+    width: 200px;
+    border: 1px solid black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+#bascet{
+    width: 400px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
