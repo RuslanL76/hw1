@@ -12,15 +12,20 @@ function isPrime(num) {
 }
 
 // 2 задание
-let countBascetFruit = 20;
-let priceBacetFruit = 100;
 
-let apple = [countBascetFruit, priceBacetFruit].reduce((a,b)=>a*b);
-let pear = [countBascetFruit, priceBacetFruit].reduce((a,b)=>a*b);
-let plum = [countBascetFruit, priceBacetFruit].reduce((a,b)=>a*b);
-let apricot = [countBascetFruit, priceBacetFruit].reduce((a,b)=>a*b);
-let priceAllBascet = [apple,pear,plum,apricot].reduce((sum, current) => sum + current, 0);
-
+let buscet = [
+    ['apple', 20, 100],
+    ['pear', 30, 200],
+    ['plum', 50, 80]
+];
+ function totalPrice(){
+     let result = 0;
+    for(let i = 0;i< buscet.length;i++){
+    result += (buscet[i][1] * buscet[i][2]);
+   }
+     return result;
+ }
+let countBascetPrice = totalPrice();
 
 //3 задание
 
